@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "browserify:typescript": "browserify src/app.ts -p [ tsify --noImplicitAny ] > dist/app.js",
+    "uglifyjs": "uglifyjs dist/app.js -m -c -o dist/app.min.js",
+    "build:js": "npm run browserify:typescript && npm run uglifyjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "tsify": "^4.0.1",
+    "typescript": "^3.6.2",
+    "uglify-js": "^3.6.0"
+  }
+}
