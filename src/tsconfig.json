@@ -6,8 +6,11 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 		"lib": [
-            "es5", "es6", "dom", "dom.iterable"
+            "esnext", "dom", "dom.iterable"
         ]
     }
 }
