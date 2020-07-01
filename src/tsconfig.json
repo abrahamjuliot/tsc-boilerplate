@@ -5,6 +5,9 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+		"lib": [
+            "es5", "es6", "dom", "dom.iterable"
+        ]
     }
 }
